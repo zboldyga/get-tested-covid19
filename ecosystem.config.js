@@ -29,9 +29,9 @@ module.exports = {
         },
         staging : {
             user : 'testSiteApp',
-            host : '104.130.127.217',
-            ref  : 'origin/staging',
-            repo : 'git@github.com:Scalabull/get-tested-covid19.git',
+            host : 'localhost',
+            ref  : 'staging',
+            repo : '.',
             path : '/home/testSiteApp/get-tested-covid19',
             'post-deploy' : 'npm install && pm2 startOrRestart ecosystem.config.js --env staging && pm2 save'
         }
